@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context="com.example.calculator.MainActivity"
+    tools:ignore="HardcodedText" >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/inputTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="aaaaaa"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textAlignment="textEnd"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@id/inputTextView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/respostaTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="aaaa"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/lightGrey"
+            android:textAlignment="textEnd"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/respostaTextView"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        style="@style/fileiraBotoes">
+
+        <Button
+            style="@style/operadorBotoes"
+            android:text="C"
+            android:textColor="@color/red"
+            android:onClick="limparAcao"/>
+        <Button
+            style="@style/operadorBotoes"
+            android:text="←"
+            android:textColor="@color/red"
+            android:onClick="apagarAcao"/>
+        <Button
+            style="@style/operadorBotoes"
+            android:text="%"/>
+        <Button
+            style="@style/operadorBotoes"
+            android:text="/"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fileiraBotoes">
+
+        <Button
+            style="@style/numeroBotoes"
+            android:text="7"/>
+        <Button
+            style="@style/numeroBotoes"
+            android:text="8"/>
+        <Button
+            style="@style/numeroBotoes"
+            android:text="9"/>
+        <Button
+            style="@style/operadorBotoes"
+            android:text="*"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fileiraBotoes">
+
+        <Button
+            style="@style/numeroBotoes"
+            android:text="4"/>
+        <Button
+            style="@style/numeroBotoes"
+            android:text="5"/>
+        <Button
+            style="@style/numeroBotoes"
+            android:text="6"/>
+        <Button
+            style="@style/operadorBotoes"
+            android:text="-"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fileiraBotoes">
+
+        <Button
+            style="@style/numeroBotoes"
+            android:text="1"/>
+        <Button
+            style="@style/numeroBotoes"
+            android:text="2"/>
+        <Button
+            style="@style/numeroBotoes"
+            android:text="3"/>
+        <Button
+            style="@style/operadorBotoes"
+            android:text="+"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fileiraBotoes">
+
+        <Button
+            style="@style/numeroBotoes"
+            android:text="+/-"/>
+        <Button
+            style="@style/numeroBotoes"
+            android:text="0"/>
+        <Button
+            style="@style/numeroBotoes"
+            android:text="."
+            android:onClick="pontoAcao"/>
+
+        <Button
+            style="@style/operadorBotoes"
+            android:background="@color/lightGreen"
+            android:onClick="igualAcao"
+            android:text="="
+            android:textColor="#607D8B" />
+
+    </LinearLayout>
+
+</LinearLayout>
